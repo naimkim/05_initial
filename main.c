@@ -5,25 +5,27 @@
 
 int main(int argc, char *argv[]) {
 	
+	int answer = 20;
 	int input;
+	int cnt=0;
 	
-	printf("input a number :");
-	scanf("%d", &input);
-	
-
-if (input>0)
+	do
 	{
-		printf("positive\n");
+		printf( "input a number :");
+		scanf("%d", &input);
+		if (input <answer)
+		{
+			printf("low!\n");
+		}
+		else if (input > answer)
+		{
+			printf("high!\n");
+		}
+		cnt++;
 	}
-	else if (input<0)
-	{
-		printf("negative\n");
-	}
-	else 
-		printf("zero\n");
+	
+	while(input != answer);
+	printf("RIGHT. trial : %i\n", cnt);
 
-	
-	
-	
 	return 0;
 }
