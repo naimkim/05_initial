@@ -5,21 +5,9 @@
 
 int main(int argc, char *argv[]) {
 	
-	int input;
-	
-	printf("input a number :");
-	scanf("%d", &input);
-	
-	if (input>0)
-	{
-		printf("%d",input);
-	}
-	else if (input<0)
-	{
-		printf("%d",-input);
-	}
-	else 
-		printf("%d",input);
+	int i;
+	for (i=0; i<10; i++)
+		printf("Hello World!\n");
 
 
 	return 0;
