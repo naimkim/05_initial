@@ -12,14 +12,14 @@ int main(int argc, char *argv[]) {
 	
 	if (input>0)
 	{
-		printf("positive\n");
+		printf("%d",input);
 	}
 	else if (input<0)
 	{
-		printf("negative\n");
+		printf("%d",-input);
 	}
 	else 
-		printf("zero\n");
+		printf("%d",input);
 
 
 	return 0;
